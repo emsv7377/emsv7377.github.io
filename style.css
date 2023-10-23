@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #6e005d;
     color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 nav ul {
@@ -43,6 +43,7 @@ p {
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Project details (text) container */
@@ -76,6 +77,7 @@ p {
 /* Slideshow container for images */
 .slideshow-container-1 img{
     max-width: 100%;
+    min-height: 520px;
     height: auto;
 }
 
@@ -83,11 +85,16 @@ p {
 .slideshow-container-2 img{
     max-width: 100%;
     height: auto;
+    min-height: 500px;
+    border: 1px solid #ddd;
+
+
 }
 
 /* Container for the Previous and Next buttons */
 .navigation {
     width: 100%; /* Adjust the width as needed to fit both buttons */
+    height: 5%;
     display: flex;
     text-align: center;
 
@@ -99,6 +106,8 @@ p {
     color: #fff;
     border: 1px;
     cursor: pointer;
+    border: 1px solid #ddd;
+
 }
 
 .next {
@@ -107,9 +116,38 @@ p {
     color: #fff;
     border: 1px;
     cursor: pointer;
+    border: 1px solid #ddd;
+
 }
 
 /* Ensure images fit within the container */
 .slideshow-container img {
     max-width: 100%;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-image {
+    padding: 15px;
+}
+
+.about-text {
+    text-align: left; /* Adjust the text alignment as needed */
+    padding: 15px;
+    margin-right: 70px;
+}
+
+/* Optional styling for the text */
+.about-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 16px;
 }
