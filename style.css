@@ -62,18 +62,31 @@ p {
 
 .project-video {
     flex: 1; /* Allow the video to grow and fill available space */
-    vertical-align: middle;
     padding: 10px; /* Add padding as needed */
 }
 
-/* Slideshow container for images */
 .slideshow-container {
     position: relative;
+}
+/* Slideshow container for images */
+.slideshow-container-0 img{
+    max-width: 100%;
+    height: auto;
+}
+/* Slideshow container for images */
+.slideshow-container-1 img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Slideshow container for images */
+.slideshow-container-2 img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Container for the Previous and Next buttons */
 .navigation {
-    position: relative;
     width: 100%; /* Adjust the width as needed to fit both buttons */
     display: flex;
     text-align: center;
@@ -81,7 +94,6 @@ p {
 }
 
 .prev {
-    float: left;
     width: 100%; /* Cover the entire height of the container */
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -90,7 +102,6 @@ p {
 }
 
 .next {
-    float: right;
     width: 100%; /* Cover the entire height of the container */
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
