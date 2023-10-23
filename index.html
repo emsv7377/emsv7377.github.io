@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - UX Designer Portfolio</title>
+    <title>Emmy Svensson - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>UX Designer</p>
+        <h1>Emmy Svensson</h1>
+        <p>Portfolio</p>
     </header>
 
     <nav>
@@ -21,28 +21,112 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Write a brief introduction about yourself, your background, and your passion for UX design.</p>
+        <p>I am a highly motivated and skilled computer and information engineering student, I possess extensive experience in a broad selection of programming languages. My problem-solving skills and ability to work on mobile apps and webpages are exceptional. I also have skills in AI and machine learning from university projects. Currently pursuing a master’s Program in Computer and Information Engineering with a focus on human coputer interaction at Uppsala University, graduating in June 2024.</p>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
         <!-- Include your projects here as individual sections or cards -->
         <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Project description, your role, and key takeaways.</p>
+            <div class="project-details">
+            <h3>Socimap</h3>
+            <p>Mobile App for easier organization of social networks. It can be used to add people you know and their information you want to remember and categorize them depending on how you know them.</p>
+
+            <h4>Collaborators:</h4>
+            <p>Michaela Nordness, Lucas Berg, Carl Sundqvist, Eduarda Nadia</p>
+
+            <h4>Languages/Frameworks Used:</h4>
+            <p>Frontend: React Native, Backend: Node.js, Database: Firebase</p>
+
+            <h4>Key Takeaways:</h4>
+            <p>This project helped me evolve my app-making skills and knowledge in React Native.</p>
+
+            <h4>Github link:</h4>
+            <p>link here</p>
+            </div>
+            <div class="project-images">
+            <div class="slideshow-container">
+            <img src="./pictures/socimap/startsida.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/allpersons.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/personVy.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/groups.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/undergrupp.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/createNew.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/redigera.png" alt="Socimap Screenshot">
+            <img src="./pictures/socimap/quiz.png" alt="Socimap Screenshot">
+
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="plusSlides(-1)"><</button>
+                <button class="next" onclick="plusSlides(1)">></button>
+            </div>
+        </div>
         </div>
 
         <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Project description, your role, and key takeaways.</p>
-        </div>
+            <div class="project-details">
+                <h3>SketchPad</h3>
+                <p>Mobile App that allows users to paint collaboratevly. It can be used as a normal paint app also.</p>
+    
+                <h4>Collaborators:</h4>
+                <p>Theo Meier Ström, Simon Dahlberg, Marcus Vesterlund, Oskar Christersson, Maria Jan</p>
+    
+                <h4>Languages/Frameworks Used:</h4>
+                <p>Frontend: React Native, Backend: Node.js with Express.js as library, Database: MongoDB</p>
+    
+                <h4>Key Takeaways:</h4>
+                <p>This project deepened my knowledge in platform spanning systems and React Native.</p>
 
+                <h4>Github link:</h4>
+                <p>link here</p>
+                </div>
+                <div class="project-video">
+                    <video width="100%" controls>
+                        <source src="your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+        </div>
+        <div class="project">
+            <div class="project-details">
+                <h3>Beeline</h3>
+                <p>Beeline is a web application that aims to reduce crowding caused by queuing. It achieves this by providing simple web interface that dispenses digital queue-tickets and notifies the user when it is their turn. Additional functionality is the ability to limit the number of people in a building by counting and creating a queue when a building becomes full.</p>
+    
+                <h4>Collaborators:</h4>
+                <p>Elsa Kidman, Eduarda Nadia, Linus Olofsson, Oskar Petterson Löfstedt, Agnes Sidemo</p>
+    
+                <h4>Languages/Frameworks Used:</h4>
+                <p>Frontend: ReactJS, Backend: Go, Database: Redis</p>
+    
+                <h4>Key Takeaways:</h4>
+                <p>This project taught me how to work with ReactJS and database communication. It also introduced me to working with Captcha</p>
+
+                <h4>Github link:</h4>
+                <p>link here</p>
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-container">
+                    <img src="./beeline/image11.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image10.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image8.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image7.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image4.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image3.png" alt="Beeline Screenshot">
+                    <img src="./beeline/image2.png" alt="Beeline Screenshot">
+                    </div>
+                    <div class="navigation">
+                        <button class="prev" onclick="plusSlides(-1)"><</button>
+                        <button class="next" onclick="plusSlides(1)">></button>
+                    </div>
+                </div>
+        </div>
         <!-- Add more projects as needed -->
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>You can reach me at <a href="mailto:emmy.m.svensson@gmail.com">emmy.m.svensson@gmail.com</a></p>
     </section>
+    <script src="slideshow.js"></script>
 </body>
 </html>

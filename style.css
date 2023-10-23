@@ -25,9 +25,80 @@ section {
     padding: 30px;
 }
 
+/* Style for subheadings */
+h4 {
+    font-weight: bold;
+    margin-top: 15px; /* Add some top margin for spacing */
+}
+
+/* Style for content paragraphs */
+p {
+    margin: 10px 0; /* Add some margin for spacing between paragraphs */
+}
+
 .project {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Project details (text) container */
+.project-details {
+    width: 100%; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top;
+    flex: 1; /* Allow the text to grow and fill available space */
+    padding: 10px;
+}
+
+/* Project images and navigation container */
+.project-images {
+    width: 20%; /* Adjust the width as needed */
+    padding: 20px;
+}
+
+.project-video {
+    flex: 1; /* Allow the video to grow and fill available space */
+    vertical-align: middle;
+    padding: 10px; /* Add padding as needed */
+}
+
+/* Slideshow container for images */
+.slideshow-container {
+    position: relative;
+}
+
+/* Container for the Previous and Next buttons */
+.navigation {
+    position: relative;
+    width: 100%; /* Adjust the width as needed to fit both buttons */
+    display: flex;
+    text-align: center;
+
+}
+
+.prev {
+    float: left;
+    width: 100%; /* Cover the entire height of the container */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px;
+    cursor: pointer;
+}
+
+.next {
+    float: right;
+    width: 100%; /* Cover the entire height of the container */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px;
+    cursor: pointer;
+}
+
+/* Ensure images fit within the container */
+.slideshow-container img {
+    max-width: 100%;
 }
